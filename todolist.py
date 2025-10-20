@@ -21,7 +21,7 @@ def remove():
     view(tasks)
     task_number = int(input('Which task do you want to remove ?: \n'))
     if task_number <= len(tasks):
-        tasks.remove(tasks[task_number-1])
+        tasks.pop(task_number-1)
     else:
         print('Invalid Option\n')
     
@@ -53,6 +53,7 @@ while True:
         print('Goodbye!')
         break
     
+
 
 
 
